@@ -1,8 +1,15 @@
-mvn archetype:generate -U \
- -DarchetypeGroupId=net.liftweb \
- -DarchetypeArtifactId=lift-archetype-blank \
- -DarchetypeVersion=1.1-SNAPSHOT \
- -DremoteRepositories=http://scala-tools.org/repo-snapshots \
- -DgroupId=metamapperbug \
- -DartifactId=metamapperbug \
- -Dversion=0.1
+Bug:
+http://groups.google.com/group/liftweb/browse_thread/thread/bca1ae85f1fa6a3a/b5b97a0da8b517f9?lnk=gst&q=metamapper#b5b97a0da8b517f9
+
+1) Run:
+
+export JETPORT=8081
+cd /tmp
+git clone git://github.com/opyate/bug.liftweb.metamapper.git
+cd bug.liftweb.metamapper/metamapperbug
+mvn -U clean jetty:run -Djetty.port=$JETPORT
+# now open your browser on http://localhost:$JETPORT
+#+ and enter an ID into the imput box and click save
+
+
+
