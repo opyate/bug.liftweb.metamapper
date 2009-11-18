@@ -1,0 +1,8 @@
+mvn archetype:generate -U \
+ -DarchetypeGroupId=net.liftweb \
+ -DarchetypeArtifactId=lift-archetype-blank \
+ -DarchetypeVersion=1.1-SNAPSHOT \
+ -DremoteRepositories=http://scala-tools.org/repo-snapshots \
+ -DgroupId=metamapperbug \
+ -DartifactId=metamapperbug \
+ -Dversion=0.1

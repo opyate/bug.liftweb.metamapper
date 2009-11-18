@@ -1,0 +1,17 @@
+<lift:surround with="default" at="content">
+		<h2>Welcome to your project!</h2>
+		<p>
+		  <table>
+		    <thead>
+		      <tr><td>id</td><td>answer</td></tr>
+		    </thead>
+		    <tbody>
+		      <lift:Zaphod.hoopyFrood form="POST">
+		        <tr><td><z:id /></td><td><z:answer /></td></tr>
+		        <z:save />
+		      </lift:Zaphod.hoopyFrood>
+		    </tbody>
+		  </table>
+		</p>
+</lift:surround>
+
